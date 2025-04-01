@@ -1,0 +1,41 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Config</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+    </head>
+    <body class="text-aling-center bg-dark text-light">
+        <div class="container">
+            <h1>Configurações Esp32 CYD</h1>
+            <h3>Editar Atalhos</h3>
+            <form class="form" action="atalhos" method="get">
+                <label for="exampleFormControlInput1" class="form-label">Atalhos</label>
+                <div class="mb-2">
+                    <select class="form-select form-control" aria-label="Default select example">
+                        <br><br>
+                        <option value="1" selected>Steam</option>
+                        <option value="2">Xbox</option>
+                        <option value="3">Whatsapp</option>
+                        <option value="4">Arduino IDE</option>
+                    </select>
+                </div>
+                <div class="mb-2">    
+                    <label for="exampleFormControlInput2" class="form-label">Novo nome para o atalho</label>
+                    <input class="form-control" type="text" name="novoAtalho" id="">
+                </div>
+                <button type="submit" class="btn-primary">Salvar</button>
+            </form>
+            <br>
+            <h3>Rede - Editar Endereço </h3>
+            <form class="form" action="configIp" method="get">
+                <div class="mb-2">
+                    <label for="exampleFormControlInput1" class="form-label">IP Computador</label>
+                    <input type="text" placeholder="192.168.1.1" name="ip" class="form-control" id=""">
+                </div>
+                <button type="submit" class="btn-primary">Salvar</button>
+            </form>
+        </div>
+    </body>
+    </html>
